@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <button onclick="signup()">Sign up</button>
+    <button onclick="signin()">Sign in</button>
     <script>
         // let age = prompt("Enter your age : ");
 
@@ -20,18 +24,25 @@
         // }else{
         //     document.write("You are not eleigible for CNIC");
         // }
-        let name = prompt("Enter Name : ");
-        let pass = prompt("Enter Password : "); 
-        // let email = prompt("Enter Email : ");
-
-        if(name=="Hamza" && pass=="12345"){
-            document.write("Login Successfully");
-        }else{
-            document.write("Invalid Password");
+        function signup() {
+            let n = prompt("Enter Name : ");
+            let email = prompt("Enter Email : ");
+            let p = prompt("Enter Password : ");
         }
+        function signin(){
+            let name = prompt("Enter Name : ");
+            let pass = prompt("Enter Password : ");
+            if (name == n && pass == p) {
+                document.write("Login Successfully");
+            } else {
+                document.write("Invalid Password");
+            }
+        }
+
 
 
 
     </script>
 </body>
+
 </html>
